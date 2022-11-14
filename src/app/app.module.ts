@@ -3,18 +3,39 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MainComponent } from './main/main.component';
-import { UsersComponent } from './users/users.component';
+import { HomeComponent } from './home/home.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import FirebaseMethods from 'src/utils/firebaseMethods';
+import { ProductsComponent } from './products/products.component';
+import { ProductComponent } from './product/product.component';
+import { LoginComponent } from './login/login.component';
+import { AuthComponent } from './auth/auth.component';
+import { CartComponent } from './cart/cart.component';
+import { UserComponent } from './user/user.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent,
-    UsersComponent
+    HomeComponent,
+    ProductsComponent,
+    ProductComponent,
+    LoginComponent,
+    AuthComponent,
+    CartComponent,
+    UserComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    FirebaseMethods
   ],
   providers: [],
   bootstrap: [AppComponent]

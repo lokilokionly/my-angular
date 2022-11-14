@@ -2,14 +2,16 @@ import { Component } from '@angular/core';
 import { getAuth, signOut } from "firebase/auth";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: []
+  selector: 'app-user',
+  templateUrl: './user.component.html',
+  styleUrls: ['./user.component.css']
 })
-export class AppComponent {
-  title = 'a-frontend';
+export class UserComponent {
 
+  constructor() { }
 
+  ngOnInit(): void {
+  }
   logOut(){
     const auth = getAuth();
   signOut(auth).then(() => {
@@ -18,6 +20,4 @@ export class AppComponent {
     // An error happened.
   });
   }
-  
 }
-

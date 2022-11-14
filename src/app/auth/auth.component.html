@@ -1,0 +1,13 @@
+<div class=" flex justify-center mx-12">
+    
+    <div class=" shadow-2xl ">
+        
+        <div action="/home" class=" pt-5 grid grid-rows-3 gap-6 m-6">
+                <h1 class=" text-center">REGISTER</h1>
+            <input class=" p-3" type="text" placeholder="email" #email>
+            <input class=" p-3" type="text" placeholder="password" #password>
+            <button type="submit" (click)="signUp(email.value, password.value)">submit</button>
+        </div>
+    </div>
+    
+</div>
